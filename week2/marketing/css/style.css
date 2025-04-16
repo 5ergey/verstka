@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,11 +27,12 @@ a {
   gap: 32px;
 }
 
-.menu__list-link {
+.test {
   padding: 0 9px 9px;
   font-size: 12px;
   line-height: 14;
   text-transform: uppercase;
   color: #373A39;
   font-weight: 700;
+  
 }
