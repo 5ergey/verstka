@@ -9,6 +9,8 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  color: #373A39;
+  font-style: normal;
 }
 
 a {
@@ -27,12 +29,64 @@ a {
   gap: 32px;
 }
 
-.test {
+.menu__list-link {
   padding: 0 9px 9px;
   font-size: 12px;
-  line-height: 14;
+  line-height: 14px;
   text-transform: uppercase;
   color: #373A39;
   font-weight: 700;
+  letter-spacing: 0.6px;
+  transition: all .5s;
   
+  
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #FCBB08;
+}
+
+.header__content {
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 93px);
+  justify-content: space-between;
+}
+
+
+
+.header__title {
+  font-weight: 500;
+  line-height: 88px;
+  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: 19px;
+  padding-top: 130px;
+}
+
+.header__subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2.74px;
+  color: #FCBB08;
+  margin-bottom: auto;
+}
+
+
+.header__icon {
+  margin-bottom: 62px;
+  display: block;
 }
