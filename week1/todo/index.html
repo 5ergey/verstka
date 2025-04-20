@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>todo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <nav class="menu">
-        <div class="header__title">Наши задачи</div>
+      <div class="header__inner">
+        <div class="header__item">Наши задачи</div>
         <div class="header__search">
-          <div class="search__title">Поиск задачи</div>
+          <div class="header__search-item">Поиск задачи</div>
           <div class="search__input">
             <input type="text" class="search__field" placeholder="Введите название задачи">
           </div>
           <div class="search__button">
             <button class="search__action">
-              <img src="images/Search icon.svg" alt="" class="search__logo">
+              <img src="images/search_icon.svg" alt="search logo" class="search__logo">
             </button>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <h1 class="main__title">Наши наполеоновские задачи для обучения</h1>
-      <div class="task__form">
-        <h2 class="form__title">Добавить задачу</h2>
-        <div class="form">
-          <input type="text" class="one">
-          <textarea name="" id="" class="big"></textarea>
-          <input type="text" class="two">
-          <button class="btn"></button>
+    <section class="add__tasks">
+      <div class="container">
+        <div class="add__tasks-title_wrapper">
+          <h1 class="add__tasks-title">Наши наполеоновские задачи для обучения</h1>
         </div>
-    </div>
+
+        <h2 class="subtitle add__tasks-subtitle">Добавить задачу</h2>
+        <div class="add__tasks-inner">
+          <div class="add__tasks-left_section">
+            <div class="add__tasks-date">
+            <span class="add__tasks-text">Дата выполнения</span>
+            <input type="date" class="add__tasks-date_field" placeholder="дд.мм.гггг">
+            </div>
+            <div class="add__tasks-name">
+            <span class="add__tasks-text">Наименование задачи</span>
+            <input type="text" class="add_tasks-input_name" placeholder="Изучить ООП за один день">
+            </div>
+          </div>
+          <div class="add__tasks-right_section">
+            <div class="tasks__descr">
+              <span class="add__tasks-text">Описание задачи</span>
+              <textarea name="" id="" class="tasks__descr-field"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
