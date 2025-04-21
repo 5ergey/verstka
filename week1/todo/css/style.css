@@ -10,6 +10,7 @@ input {
 
 .body {
   font-family: "Inter", sans-serif;
+  font-size: 16px;
   
 }
 
@@ -95,7 +96,7 @@ input {
   max-height: 310px;
   padding-top: 21px;
   font-size: 14px;
-  line-height: 17px;
+  margin-bottom: 22px;
 }
 
 .add__tasks-title_wrapper {
@@ -116,50 +117,168 @@ input {
 
 .subtitle {
   text-align: center;
-}
-
-.add__tasks-subtitle {
-  padding-top: 39px;
-  margin-bottom: 26px;
   font-size: 16px;
   font-weight: bold;
   line-height: 19px;
 }
 
+.add__tasks-subtitle {
+  padding-top: 39px;
+  margin-bottom: 26px;
+
+}
+
+.add__tasks-inner {
+  display: flex;
+  gap: 20px;
+}
+
 .add__tasks-left_section {
-  max-width: 523px;
+  flex-basis: 523px;
   display: flex;
   flex-direction: column;
+  max-height: 154px;
+  gap: 18px;
 }
 
 
 .add__tasks-date {
-  position: relative;
   flex: 1;
 }
 
 .add__tasks-text {
-  position: absolute;
-  top: -20px;
-  left: 10px;
+  padding-left: 11px;
+  line-height: 17px;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .add__tasks-date_field {
   width: 100%;
+  height: 36px;
 }
 
 .add__tasks-name {
-  position: relative;
   flex: 1;
-  margin-top: 40px;
 }
 
 .add_tasks-input_name {
   width: 100%;
+  height: 36px;
 }
-
 
 .add__tasks-right_section {
   display: flex;
+  flex-basis: 734px;
   gap: 20px;
+}
+
+.tasks__descr {
+  flex: 1;
+  max-height: 154px;
+}
+
+.tasks__descr-field {
+  width: 100%;
+  height: 122px;
+  padding: 0;
+}
+
+.tasks-add {
+  flex-basis: 195px;
+  align-self: flex-end;
+}
+
+.add {
+  width: 100%;
+  height: 62px;
+  background-color: #68B07D;
+  border-radius: 6px;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.button__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+.btn__text {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tasks__list {
+  margin-bottom: 10px;
+}
+
+.tasks_sub {
+  margin-bottom: 17px;
+}
+
+.tasks__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task__block {
+  display: flex;
+  gap: 20px;
+  height: 72px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.task__date {
+  flex-basis: 196px;
+}
+
+.task__title {
+  flex-basis: 411px;
+}
+
+.task__descr {
+  flex: 1;
+}
+
+.task__status {
+  flex-basis: 86px;
+}
+
+.color1 {
+  background-color: #E9EAD8;
+}
+
+.color2 {
+  background-color: #D8EADF;
+}
+
+.footer {
+  background-color: black;
+  color: #fff;
+
+}
+
+.footer__text {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  align-items: center;
+  height: 68px;
+  gap: 20px;
+}
+
+.footer__our-tasks {
+  flex-basis: 197px;
+}
+
+.footer__byem-ebalo {
+  flex: 1;
+  padding-left: 25px;
 }
