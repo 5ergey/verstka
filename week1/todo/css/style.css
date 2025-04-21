@@ -3,41 +3,48 @@
   margin: 0 auto;
 }
 
-.header {
-  height: 57px;
-  background-color: #F2F0F0;
-  margin-bottom: 39px;
+input {
+  border-radius: 6px;
+  border: 1px solid #A7A7A7;
 }
 
-.menu {
+.body {
+  font-family: "Inter", sans-serif;
+  
+}
+
+.header {
+  background-color: #F2F0F0;
+}
+
+.header__inner {
   display: flex;
-  height: 57px;
+  gap: 20px;
   align-items: center;
+  height: 57px;
 }
 
 .header__search {
   display: flex;
   gap: 20px;
-  align-items: center;
-  margin-left: 20px;
   flex: 1;
+  align-items: center;
 }
 
-
-.header__title {
-  color: #000000;
-  flex: 0 0 195px;
-  font-size: 16px;
+.header__item {
+  flex-basis: 195px;
   font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.search__title {
-  font-size: 16px;
-  font-weight: bold;
-  flex: 0 0 195px;
+.header__search-item {
+  flex-basis: 195px;
   text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
 }
-
 
 .search__input {
   flex: 1;
@@ -45,57 +52,114 @@
 
 .search__field {
   width: 100%;
+  font-size: 14px;
+  color: #B1B0B0;
+  font-weight: 500;
+  opacity: 100%;
 }
 
+
+
 .search__button {
-  flex: 0 0 89px;
-  border-radius: 50px;
+  flex: 0 0 90px;
 }
 
 .search__action {
   width: 100%;
   background-color: #B0B0B0;
-  border-radius: 7px;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
 }
+
 
 
 .search__logo {
-  vertical-align: middle;
+  margin: 0 auto;
+}
+
+
+.search__action:hover {
+  transform: scale(1.1);
+  transition: all 0.3s easy;
+}
+
+.search__action:active {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+  transition: all 0.3s easy;
 }
 
 
 
-.main__title {
-  font-size: 20px;
+.add__tasks {
+  max-height: 310px;
+  padding-top: 21px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.add__tasks-title_wrapper {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.add__tasks-title {
   font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
 }
 
-.main__title {
+.subtitle {
   text-align: center;
-  margin-bottom: 39px;
 }
 
-.form__title {
-  text-align: center;
+.add__tasks-subtitle {
+  padding-top: 39px;
+  margin-bottom: 26px;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 26px;
+  line-height: 19px;
 }
 
-.form {
+.add__tasks-left_section {
+  max-width: 523px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+.add__tasks-date {
+  position: relative;
+  flex: 1;
+}
+
+.add__tasks-text {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.add__tasks-date_field {
   width: 100%;
 }
 
-.one {
-  width: 50%;
+.add__tasks-name {
+  position: relative;
+  flex: 1;
+  margin-top: 40px;
 }
 
-.two {
-  width: 50%;
+.add_tasks-input_name {
+  width: 100%;
 }
 
-.big {
-  width: 50%;
+
+.add__tasks-right_section {
+  display: flex;
+  gap: 20px;
 }
